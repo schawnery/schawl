@@ -72,6 +72,7 @@
     visibility: hidden;
 }
 
+/* this slick slide section is in control of the slide deck within the "Our Works" section */
 .slick-slide
 {
     display: none;
