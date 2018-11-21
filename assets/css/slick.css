@@ -72,13 +72,12 @@
     visibility: hidden;
 }
 
-/* this slick slide section is in control of the slide deck within the "Our Works" section */
 .slick-slide
 {
     display: none;
     float: left;
 
-    height: 10%;
+    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
