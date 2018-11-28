@@ -17,7 +17,7 @@
 
 
 /* ==========================================================================
-   CSS main page
+   CSS Main
    ========================================================================== */
 html,
 body {
@@ -99,7 +99,9 @@ section { overflow: hidden; }
 .text-mega{color:#00a885 !important;;}
 .text-white{color:#fff !important;;}
 .text-black{color:#16293b !important;}
-.text-yellow{color:##8957fd;}
+.text-yellow{
+    color:#fddc57;
+}
 
 .disabled{
     cursor: not-allowed;
@@ -115,7 +117,7 @@ section { overflow: hidden; }
 .bg-grey{background-color: #fcfbf7;}
 .bg-black{background-color: #222222;}
 .bg-white{background-color: #fff;}
-.bg-yellow{background-color: #8957fd;}
+.bg-yellow{background-color: #fddc57;}
 
 . {
     -moz-user-select: none;
@@ -682,7 +684,10 @@ textarea::-ms-input-placeholder{
   width: 100%;
   overflow: hidden;
 }*/
-
+.img-bg{
+  background: url(../images/home-bg_me.jpg);
+  background-repeat: no-repeat;
+}
 
 
 .transform_scal_rotate:hover img{ 
