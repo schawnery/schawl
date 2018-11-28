@@ -315,7 +315,7 @@ ul{
     height:100%;
     position: absolute;
     left:0;
-    top: -50px;
+    top: 0;
 }
 
 
@@ -890,6 +890,7 @@ Home Section style
     background: url(../images/home-bg_me.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
+    top: -150px;
     padding-top: 300px;
     padding-bottom: 320px;
     width:100%;
