@@ -126,7 +126,7 @@ section { overflow: hidden; }
 .bg-white{background-color: #fff;}
 .bg-yellow{background-color: #fddc57;}
 
-img {
+. {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -691,6 +691,10 @@ textarea::-ms-input-placeholder{
   width: 100%;
   overflow: hidden;
 }*/
+.img-bg{
+  background: url(../images/home-bg_me.jpg);
+  background-repeat: no-repeat;
+}
 
 
 .transform_scal_rotate:hover img{ 
