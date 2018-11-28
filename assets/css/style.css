@@ -890,11 +890,11 @@ Home Section style
     background: url(../images/home-bg_me.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
-    top: -150px;
     padding-top: 300px;
     padding-bottom: 320px;
     width:100%;
 }
+
 .home_text h1{
     font-size:100px;
     font-family: 'Kaushan Script', cursive;
