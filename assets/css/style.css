@@ -887,7 +887,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/home-bg_me.jpg) no-repeat bottom center;
+    background: url(../images/home-bg_me.jpg) no-repeat 450px center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
