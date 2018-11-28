@@ -684,11 +684,7 @@ textarea::-ms-input-placeholder{
   width: 100%;
   overflow: hidden;
 }*/
-.img-bg{
-  background: url(../images/home-bg_me.jpg);
-  background-repeat: no-repeat;
-  top : -300px:
-}
+
 
 
 .transform_scal_rotate:hover img{ 
@@ -892,7 +888,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/home-bg.jpg) no-repeat top center;
+    background: url(../images/home-bg_me.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
