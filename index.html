@@ -12,6 +12,11 @@
 	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	.w3-quarter img{margin-bottom: -6px; cursor: pointer}
 	.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+	.column-div { 
+		-webkit-column-count:2;
+		-moz-column-count:2;
+		column-count:2;
+	}
 	</style>
 	
 	<body class="w3-light-grey">
@@ -72,7 +77,7 @@
 		</p>
 		<hr class="w3-opacity">
 		<center><h4 class="w3-padding-16">Technical Skills</h4></center>
-		      <div class = "w3-half">
+		<div class="column-div">
 			   <p class="w3-wide">Graphic Design</p>
 			      <div class="w3-white">
 				<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
@@ -84,9 +89,7 @@
 			      <p class="w3-wide">Adobe Illustrator</p>
 			      <div class="w3-white">
 				<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
-			   </div>
-		    </div>
-		    <div class = "w3-half">
+			
 			   <p class="w3-wide">Programming</p>
 			      <div class="w3-white">
 				<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:75%">75%</div>
@@ -99,7 +102,8 @@
 			      <div class="w3-white">
 				<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:50%">50%</div>
 			   </div>
-		    </div>
+		
+		</div>
 	      <center>
 		<p><form method = "get" action = "assets/Winter 19 Schawnery Resume.pdf">
 		   <button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button>
