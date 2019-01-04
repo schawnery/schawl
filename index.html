@@ -33,9 +33,19 @@
 		color: #fff!important;
 		background-color:#504e4e!important
 	}
+	#content {
+	    position: fixed;
+	    left: 0px;
+	    right: 0px;
+	    display: block;
+	    background-color: #F2EEEE;
+	    height: 51px;
+	    width: 100%;
+	}
+
 	</style>
 	
-	<body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200" style = "overflow:auto">
+<body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200" style = "overflow:auto">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
@@ -63,6 +73,7 @@
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
+		<div id = "content">
   <!-- PORTFOLIO -->
   <div class="w3-row">
     <div class="w3-third">
@@ -224,7 +235,7 @@
 	  </div>
 	
 		<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
-
+	</div>
 	<!-- End page content (write </div> if this doesn't work right...)-->
 
 	<script>
