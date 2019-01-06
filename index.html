@@ -1,251 +1,253 @@
+
 <!DOCTYPE html>
 	
-	<html lang="en">
-	<title>Schawnery | Welcome!</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<html lang="en">
+<title>Schawnery | Welcome!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<style>
-	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-	.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-	.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
-	.column-div { 
-		-webkit-column-count:2;
-		-moz-column-count:2;
-		column-count:2;
-	}
-	.dark-background-purple{
-		color: #fff!important;
-		background-color:#3d1d7b!important
-	}
-	.grey-background{
-		color: #fff!important;
-		background-color:#b1b1b17a!important
-	}
-	.dark-grey{
-		color: #fff!important;
-		background-color:#504e4e!important
-	}
-	</style>
-	
-<body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200" style = "overflow:auto">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.column-div { 
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-count:2;
+}
+.dark-background-purple{
+	color: #fff!important;
+	background-color:#3d1d7b!important
+}
+.grey-background{
+	color: #fff!important;
+	background-color:#b1b1b17a!important
+}
+.dark-grey{
+	color: #fff!important;
+	background-color:#504e4e!important
+}
+</style>
+
+<body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SCHAWNERY<br>LIN</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
-	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-	<a href="#experiences" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+<h3 class="w3-padding-64 w3-center"><b>SCHAWNERY<br>LIN</b></h3>
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+<a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+<a href="#experiences" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a> 
+<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SCHAWNERY LIN</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+<header class="w3-container w3-animate-left w3-left w3-hide-large w3-white w3-xlarge w3-padding-16">
+<span class="w3-left w3-padding">SCHAWNERY LIN</span>
+<a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer ; overflow:auto" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-	<!-- !PAGE CONTENT! -->
-	<div class="w3-main" style="margin-left:300px; overflow:auto; display: inline-block">
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px; overflow:auto"></div>
-  
-  <!-- PORTFOLIO -->
-  <div class="w3-row" style = "display: inline-block">
-    <div class="w3-third">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
-    </div>
-
-    <div class="w3-third">
-      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
-    </div>
-    
-    <div class="w3-third">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
-    </div>
-  </div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px; margin-top:83px; margin-left:300px">
 
 
+<!-- Push down content on small screens --> 
+<div class="w3-hide-large" style="margin-top:83px"></div>
 
-	  <!-- Modal for full size images on click-->
-	  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-	    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-	    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-	      <img id="img01" class="w3-image">
-	      <p id="caption"></p>
-	    </div>
-	  </div>
+<!-- PORTFOLIO -->
+<div class="w3-row">
+	<div class="w3-third">
+		<img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+		<img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+		<img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+	</div>
 
-	  <!-- About section -->
-	  <div class="w3-container dark-background-purple w3-center w3-text-light-grey w3-padding-32" style = "display: inline-block" id="about">
-	    <h4><b>About Me</b></h4>
-	    <div class="w3-content w3-justify" style="max-width:600px">
-	      <center><h4>Third-year student at the University of Washington | Seattle</h4></center>
-	    <p>A bit about myself, I'm a project based learner, I love country music and Seattle / local Hip Hop. 
-		I don't mind getting my boots a little dirty; I love the outdoors and the PNW. 
-		I'm also passionate about all things Information Technology and I'm an aspiring Maker. 
-			</p>
-			<hr class="w3-opacity">
-			<center><h4 class="w3-padding-12">Technical Skills</h4></center>
-			<div class="column-div">
-					<div>
-						<p>Graphic Design</p>
-						<div class="w3-white">
-							<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
-						</div>
-						<p>Adobe Photoshop</p>
-						<div class="w3-white">
-							<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:85%">85%</div>
-						</div>
-						<p>Adobe Illustrator</p>
-						<div class="w3-white">
-							<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
-						</div>
+	<div class="w3-third">
+		<img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+		<img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+		<img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+	</div>
+	
+	<div class="w3-third">
+		<img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+		<img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+		<img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+	</div>
+</div>
+
+
+
+	<!-- Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+		<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image">
+			<p id="caption"></p>
+		</div>
+	</div>
+
+	<!-- About section -->
+	<div class="w3-container dark-background-purple w3-center w3-text-light-grey w3-padding-32" id="about">
+		<h4><b>About Me</b></h4>
+		<div class="w3-content w3-justify" style="max-width:600px">
+			<center><h4>Third-year student at the University of Washington | Seattle</h4></center>
+		<p>A bit about myself, I'm a project based learner, I love country music and Seattle / local Hip Hop. 
+	I don't mind getting my boots a little dirty; I love the outdoors and the PNW. 
+	I'm also passionate about all things Information Technology and I'm an aspiring Maker.
+		</p>
+		<hr class="w3-opacity">
+		<center><h4 class="w3-padding-12">Technical Skills</h4></center>
+		<div class="column-div">
+				<div>
+					<p>Graphic Design</p>
+					<div class="w3-white">
+						<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
 					</div>
-					<div>
-						<p>Programming</p>
-						<div class="w3-white">
-							<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:75%">75%</div>
-						</div>
-						<p>Java</p>
-						<div class="w3-white">
-							<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:85%">85%</div>
-						</div>
-						<p>HTML & CSS</p>
-						<div class="w3-white">
-							<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:50%">50%</div>
-						</div>
-					</div>		
-			</div>
-			<center>
-				<p>
-					<form method = "get" action = "assets/Winter 19 Schawnery Resume.pdf">
-						<button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button>
-					</form>
-				</p>
-			</center>
-			<hr class="w3-opacity">
-	    </div>
-	  </div>
+					<p>Adobe Photoshop</p>
+					<div class="w3-white">
+						<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:85%">85%</div>
+					</div>
+					<p>Adobe Illustrator</p>
+					<div class="w3-white">
+						<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:80%">80%</div>
+					</div>
+				</div>
+				<div>
+					<p>Programming</p>
+					<div class="w3-white">
+						<div class="position:relative w3-padding-12 w3-center w3-grey" style="width:75%">75%</div>
+					</div>
+					<p>Java</p>
+					<div class="w3-white">
+						<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:85%">85%</div>
+					</div>
+					<p>HTML & CSS</p>
+					<div class="w3-white">
+						<div class="w3-container w3-padding-12 w3-center w3-grey" style="width:50%">50%</div>
+					</div>
+				</div>		
+		</div>
+		<center>
+			<p>
+				<form method = "get" action = "assets/Winter 19 Schawnery Resume.pdf">
+					<button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button>
+				</form>
+			</p>
+		</center>
+		<hr class="w3-opacity">
+		</div>
+	</div>
 
-		<!-- ABOUT II -->
-	  <div class="w3-container grey-background w3-center w3-text-black w3-padding-32" style = "display: inline-block" id="experiences">
-			<h4><b class="w3-text-black">Current Endeavours</b></h4>
-			
-			<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
-				<hr color="black">
-					<center><h4>UW-Information Technology | Academic Services</h4></center>
-				<p>I'm currently one of two service manager interns at UW-IT Academic Services. I 
-					am in charge of handling Tier 2 Escalated requests and incidents for MyPlan, the 
-					University of Washington's registration tool.
-				</p>
-				<p> I deal specifically with knowledge management processes to ensure smoother workflow. 
-					Aside from working in an IT environment, I like to spend time to develop personal skills. 
-					I developed my skills in coding, specialized in Java using Visual Studio Code and jGrasp. 
-					I spend a lot of my time learning Photoshop to hone my artistic side, creating sketches for projects, and drawing.
-				</p>
-			</div>
-
-			<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
-					<center><h4>compTIA A+</h4></center>
-				<p>I'm also studying for the compTIA A+ certification exam (220-1001 & 220-1002)
-					I hope to gain productive knowledge and help put my foot in the door for a career in IT. 
-				</p>
-			</div>
-
-			<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
-					<center><h4>Pi Alpha Phi | Fraternity Incorporated</h4></center>
-				<p>I also have been involved in my Fraternity's Executive Cabinet (2016-present) and made numerous key contributions. 
-					These include uphauling and spearheading knowledge management processes which included
-					 comprehensive instructions for internal functions (finances, event set-ups, recruitment), 
-					 as well as external responses (conflict resolutions with external organizations). 
-					My involvement within the fraternity stretches a width breadth, and deep within each facet. 
-				</p>
-				<p>
-					I have also created flyers for recruitment using Adobe Illustrator and Adobe Photoshop, 
-					efforts which led to a 25% increase in recruitment and member retention rates. In addition to digital media,
-					I also familiarized myself with Adobe Premier Pro to create recruitment videos, which was an absolute wonder experience.
-					I loved understanding how storyboarding for videos work, as well as filming events and people - the interactions were 
-					phenomenal and I am continuing to work on future videos. 
-				</p>
-				<hr color="black">
-			</div>
+	<!-- ABOUT II -->
+	<div class="w3-container grey-background w3-center w3-text-black w3-padding-32" id="experiences">
+		<h4><b class="w3-text-black">Current Endeavours</b></h4>
+		
+		<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
+			<hr color="black">
+				<center><h4>UW-Information Technology | Academic Services</h4></center>
+			<p>I'm currently one of two service manager interns at UW-IT Academic Services. I 
+				am in charge of handling Tier 2 Escalated requests and incidents for MyPlan, the 
+				University of Washington's registration tool.
+			</p>
+			<p> I deal specifically with knowledge management processes to ensure smoother workflow. 
+				Aside from working in an IT environment, I like to spend time to develop personal skills. 
+				I developed my skills in coding, specialized in Java using Visual Studio Code and jGrasp. 
+				I spend a lot of my time learning Photoshop to hone my artistic side, creating sketches for projects, and drawing.
+			</p>
 		</div>
 
+		<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
+				<center><h4>compTIA A+</h4></center>
+			<p>I'm also studying for the compTIA A+ certification exam (220-1001 & 220-1002)
+				I hope to gain productive knowledge and help put my foot in the door for a career in IT. 
+			</p>
+		</div>
 
-	  <!-- Contact section -->
-	  <div class="w3-container dark-grey w3-text-white w3-padding-32 w3-padding-large" style = "display: inline-block" id="contact">
-	    <div class="w3-content" style="max-width:600px">
-	      <h4 class="w3-center w3-text-white"><b>Contact Me</b></h4>
-	      <p>Enough about me, I'd like to find out more about you! Feel free to fill out the form and fill me in with the details :) I love meeting new people!</p>
-	      <center>
-					<p>email: schawl@uw.com</p>
-					<p>phone: (360) 726 2831</p>
-				</center>
-				
-			<form action="https://formspree.io/schawl@uw.edu" method="POST" />
-			
-			<div class = "w3-text-black">
-				<div class="w3-section">
-					<label class = "w3-text-white">Name</label>
-					<input class="w3-input w3-border w3-text-black" type="text" name="Name" required>
-				</div>
-				<div class="w3-section">
-					<label class = "w3-text-white">Email</label>
-					<input class="w3-input w3-border w3-text-black" type="text" name="Email" required>
-				</div>
-				<div class="w3-section">
-					<label class = "w3-text-white">Message</label>
-					<input class="w3-input w3-border w3-text-black" type="text" name="Message" required>
-				</div>
-					<button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-					</form>
-				</div>
-			</div>
-	  	</div>
-	
-		<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
+		<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
+				<center><h4>Pi Alpha Phi | Fraternity Incorporated</h4></center>
+			<p>I also have been involved in my Fraternity's Executive Cabinet (2016-present) and made numerous key contributions. 
+				These include uphauling and spearheading knowledge management processes which included
+				 comprehensive instructions for internal functions (finances, event set-ups, recruitment), 
+				 as well as external responses (conflict resolutions with external organizations). 
+				My involvement within the fraternity stretches a width breadth, and deep within each facet. 
+			</p>
+			<p>
+				I have also created flyers for recruitment using Adobe Illustrator and Adobe Photoshop, 
+				efforts which led to a 25% increase in recruitment and member retention rates. In addition to digital media,
+				I also familiarized myself with Adobe Premier Pro to create recruitment videos, which was an absolute wonder experience.
+				I loved understanding how storyboarding for videos work, as well as filming events and people - the interactions were 
+				phenomenal and I am continuing to work on future videos. 
+			</p>
+			<hr color="black">
+		</div>
 	</div>
-	<!-- End page content (write </div> if this doesn't work right...)-->
-</div>
-	<script>
-	// Script to open and close sidebar
-	function w3_open() {
-	  document.getElementById("mySidebar").style.display = "block";
-	  document.getElementById("myOverlay").style.display = "block";
-	}
 
-	function w3_close() {
-	  document.getElementById("mySidebar").style.display = "none";
-	  document.getElementById("myOverlay").style.display = "none";
-	}
 
-	// Modal Image Gallery
-	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
-	}
+	<!-- Contact section -->
+	<div class="w3-container dark-grey w3-text-white w3-padding-32 w3-padding-large" id="contact">
+		<div class="w3-content" style="max-width:600px">
+			<h4 class="w3-center w3-text-white"><b>Contact Me</b></h4>
+			<p>Enough about me, I'd like to find out more about you! Feel free to fill out the form and fill me in with the details :) I love meeting new people!</p>
+			<center>
+				<p>email: schawl@uw.com</p>
+				<p>phone: (360) 726 2831</p>
+			</center>
+			
+		<form action="https://formspree.io/schawl@uw.edu" method="POST" />
+		
+		<div class = "w3-text-black">
+			<div class="w3-section">
+				<label class = "w3-text-white">Name</label>
+				<input class="w3-input w3-border w3-text-black" type="text" name="Name" required>
+			</div>
+			<div class="w3-section">
+				<label class = "w3-text-white">Email</label>
+				<input class="w3-input w3-border w3-text-black" type="text" name="Email" required>
+			</div>
+			<div class="w3-section">
+				<label class = "w3-text-white">Message</label>
+				<input class="w3-input w3-border w3-text-black" type="text" name="Message" required>
+			</div>
+				<button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
-	</script>
-	</body>
+	<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
+
+<!-- End page content (write </div> if this doesn't work right...)-->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+	document.getElementById("mySidebar").style.display = "block";
+	document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+	document.getElementById("mySidebar").style.display = "none";
+	document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+	document.getElementById("img01").src = element.src;
+	document.getElementById("modal01").style.display = "block";
+	var captionText = document.getElementById("caption");
+	captionText.innerHTML = element.alt;
+}
+
+</script>
+</body>
 </html>
