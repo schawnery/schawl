@@ -7,7 +7,14 @@
     padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
     background-color:#212121;
+    border-radius:9px;
     overflow:hidden;
+
+    /* drop shadow (one sided)*/
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+
 }
 
 .content {
@@ -78,8 +85,8 @@ p{
 }
 
 .numbers{
-    font-weight:900;
-    font-size:100px;
+    font-weight:600;
+    font-size:60px;
 }
 
 #bottom {
