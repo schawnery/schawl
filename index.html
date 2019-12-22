@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="./css.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,7 +40,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+	<br>
 <h3 class="w3-padding-64 w3-center"><b>SCHAWNERY<br>LIN</b></h3>
 <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
 <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
@@ -47,13 +49,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-animate-left w3-left w3-hide-large w3-white w3-xlarge w3-padding-16">
+<span class="w3-left w3-padding">SCHAWNERY LIN</span>
+<a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content" style="max-width:1600px; margin-top:83px; margin-left:300px">
 
 
 <!-- Push down content on small screens --> 
-<div class="w3-hide-large"></div>
+<div class="w3-hide-large" style="margin-top:83px"></div>
 
 <!-- PORTFOLIO -->
 
@@ -67,19 +77,72 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	I'm also passionate about all things Information Technology and I'm an aspiring Maker and Artist.
 		</p>
 		<hr class="w3-opacity">
-		<div class="w3-row">
-			<div class="w3-third">
-				<img src="./assets/Fabled.jpg" style="width:100%" onclick="onClick(this)">
-			</div>
-		
-			<div class="w3-third">
-				<img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)">
-			</div>
-			
-			<div class="w3-third">
-				<img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)">
-			</div>
-		</div>
+		<!-- 1st row verticaly centered text in the square columns -->
+
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>This demo shows you can center multiple types of content :
+                    <li>Text</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>... (you can also do it with forms)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">
+                    98%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">               
+                3.9/5
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Centered responsive images as background with centered content over it.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Again
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                And again
+            </div>
+        </div>
+    </div>
+</div>
+
+
 		<!-- Modal for full size images on click-->
 		<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
 			<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
@@ -91,7 +154,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 		<center>
 			<p>
-				<form method = "get" action = "./assets/Schawnery-Resume.pdf">
+				<form method = "get" action = "assets/Winter 19 Schawnery Resume.pdf">
 					<button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button>
 				</form>
 			</p>
@@ -108,43 +171,37 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			<hr color="black">
 				<center><h4>UW-Information Technology | Academic Services</h4></center>
 			<p>I'm currently one of two service manager interns at UW-IT Academic Services. I 
-				handle Tier 2 requests and incidents for MyPlan, the University of Washington's 
-				registration tool.
+				am in charge of handling Tier 2 Escalated requests and incidents for MyPlan, the 
+				University of Washington's registration tool.
 			</p>
 			<p> I deal specifically with knowledge management processes to ensure smoother workflow. 
-				
+				Aside from working in an IT environment, I like to spend time to develop personal skills. 
+				I developed my skills in coding, specialized in Java using Visual Studio Code and jGrasp. 
+				I spend a lot of my time learning Photoshop to hone my artistic side, creating sketches for projects, and drawing.
 			</p>
 		</div>
 
 		<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
-				<center><h4>Personal Endeavours</h4></center>
+				<center><h4>compTIA A+</h4></center>
 			<p>I'm also studying for the compTIA A+ certification exam (220-1001 & 220-1002)
 				I hope to gain productive knowledge and help put my foot in the door for a career in IT. 
-				Aside from working in an IT environment and working on my sculptures, I like to spend time 
-				honing my creative side using Adobe CC, and 3D printing.
 			</p>
 		</div>
 
 		<div class="w3-content w3-justify w3-text-black" style="max-width:600px; padding-top:12px">
 				<center><h4>Pi Alpha Phi | Fraternity Incorporated</h4></center>
 			<p>I also have been involved in my Fraternity's Executive Cabinet (2016-present) and made numerous key contributions. 
-				These include uphauling and spearheading leadership and management processes which included
-				 comprehensive instructions for internal (finances, event set-ups, recruitment), 
-				 as well as external functions. My involvement within the fraternity stretches a width 
-				 breadth, and deep within each facet. 
+				These include uphauling and spearheading knowledge management processes which included
+				 comprehensive instructions for internal functions (finances, event set-ups, recruitment), 
+				 as well as external responses (conflict resolutions with external organizations). 
+				My involvement within the fraternity stretches a width breadth, and deep within each facet. 
 			</p>
 			<p>
 				I have also created flyers for recruitment using Adobe Illustrator and Adobe Photoshop, 
-				efforts which led to a 25% increase in recruitment and 100% member retention rates. In addition to digital media,
+				efforts which led to a 25% increase in recruitment and member retention rates. In addition to digital media,
 				I also familiarized myself with Adobe Premier Pro to create recruitment videos, which was an absolute wonder experience.
 				I loved understanding how storyboarding for videos work, as well as filming events and people - the interactions were 
 				phenomenal and I am continuing to work on future videos. 
-			</p>
-			<p>
-				Most recently, I designed and built an audio system using power supplies, inverters, 
-				high power multi-channel amplifiers, and high performance speakers and subwoofers to 
-				deliver a terrifying amount of sound and entertainment. The project took over three months
-				of planning, and over 100 hours of actual build time. 
 			</p>
 			<hr color="black">
 		</div>
@@ -155,7 +212,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	<div class="w3-container dark-grey w3-text-white w3-padding-32 w3-padding-large" id="contact">
 		<div class="w3-content" style="max-width:600px">
 			<h4 class="w3-center w3-text-white"><b>Contact Me</b></h4>
-			<p>Enough about me, I'd like to find out more about you! Feel free to fill out the form and fill me in with the details : ) I love meeting new people!</p>
+			<p>Enough about me, I'd like to find out more about you! Feel free to fill out the form and fill me in with the details :) I love meeting new people!</p>
 			<center>
 				<p>email: schawl@uw.com</p>
 				<p>phone: (360) 726 2831</p>
