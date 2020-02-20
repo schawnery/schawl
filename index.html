@@ -14,26 +14,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
-.column-div { 
-	-webkit-column-count:2;
-	   -moz-column-count:2;
-	        column-count:2;
-}
-.dark-background-purple{
-	color: #fff!important;
-	background-color:#4b2e83!important
-}
-.grey-background{
-	color: #fff!important;
-	background-color:#e8e3d3 !important
-}
-.dark-grey{
-	color: #fff!important;
-	background-color:#504e4e!important
-}
 	body,
 	h1,
 	h2,
@@ -73,131 +53,30 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		color: #fff !important;
 		background-color: #504e4e !important
 	}
+
+	.side-button {
+		margin: 0; 
+		position: absolute; 
+		top: 50%; 
+		left: 50%; 
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
 </style>
 
 <body class="w3-light-grey" data-spy="scroll" data-target=".sidebar" data-offset="200">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-	style="z-index:3;width:300px;font-weight:bold;" 
-	id="mySidebar">
-	<div>
-		<h3 class="w3-padding-64 w3-center;"
-			style="vertical-align:middle;"><b>SCHAWNERY<br>LIN</b></h3>
-		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-		<a href="#experiences" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a> 
-		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-	</div>
-</nav>
-
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px; margin-left:300px">
-
-
-<!-- Push down content on small screens --> 
-<div class="w3-hide-large" style="margin-top:83px"></div>
-
-<!-- PORTFOLIO -->
-
-	<!-- About section -->
-	<div class="w3-container dark-background-purple w3-center w3-text-light-grey" id="about">
-		<h4><b>About Me</b></h4>
-		<div class="w3-content w3-justify" style="max-width:600px">
-			<center><h4>Fourth-year Interdisciplinary Visual Artist at the University of Washington</h4></center>
-		<p>I'm a project based learner, I love country music and Seattle / local Hip Hop. 
-	I don't mind getting my boots a little dirty; I love the outdoors and the PNW. 
-	I'm also passionate about all things Information Technology and I'm an aspiring Maker and Artist.
-		</p>
-		<hr class="w3-opacity">
-		<!-- 1st row verticaly centered text in the square columns -->
-
-<div class="square">
-    <div class="content">
-        <div class="table">
-            <div class="table-cell">
-                <ul>This demo shows you can center multiple types of content :
-                    <li>Text</li>
-                    <li>Images</li>
-                    <li>Lists</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="square">
-    <div class="content">
-        <div class="table">
-            <div class="table-cell numbers">
-                    98%
-            </div>
-        </div>
-    </div>
-</div>
-<div class="square">
-    <div class="content">
-        <div class="table">
-            <div class="table-cell numbers">               
-                3.9/5
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 3rd row responsive images in background with centered content -->
-
-<div class="square bg img1">
-   <div class="content">
-        <div class="table">
-            <div class="table-cell">
-                Centered responsive images as background with centered content over it.
-            </div>
-        </div>
-    </div>
-</div>
-<div class="square bg img2">
-    <div class="content">
-        <div class="table">
-            <div class="table-cell">
-                Again
-            </div>
-        </div>
-    </div>
-</div>
-<div class="square bg img3">
-    <div class="content">
-        <div class="table">
-            <div class="table-cell">
-                And again
-            </div>
-        </div>
-    </div>
-</div>
-
-
-		<!-- Modal for full size images on click-->
-		<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-			<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-				<img id="img01" class="w3-image">
-				<p id="caption"></p>
-			</div>
-		</div>
 	<!-- Sidebar/menu -->
-	<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+	<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-center"
 		style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
-		<br>
-		<h3 class="w3-padding-64 w3-center text-align:center;"><b>SCHAWNERY<br>LIN</b></h3>
-		<a href="javascript:void(0)" onclick="w3_close()"
-			class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ME</a>
-		<a href="#works" onclick="w3_close()" class="w3-bar-item w3-button">WORKS</a>
-		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+		<div class = side-button>
+			<!--w3-padding-64 w3-center text-align:center;-->
+			<h3><b>SCHAWNERY<br>LIN</b></h3>
+			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ME</a>
+			<a href="#works" onclick="w3_close()" class="w3-bar-item w3-button">WORKS</a>
+			<a href="#for fun" onclick="w3_close()" class="w3-bar-item w3-button">FOR FUN</a>
+			<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+		</div>
 	</nav>
-
-
 
 	<!-- Overlay effect when opening sidebar on small screens -->
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
@@ -206,10 +85,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	<!-- !PAGE CONTENT! -->
 	<div class="w3-main w3-content" style="max-width:1600px; margin-left:300px">
 
-
 		<!-- About section -->
 		<div class="w3-container dark-background-purple w3-center w3-text-light-grey" id="about">
-			
+
 			<div class="w3-content w3-padding-32" style=" max-width:600px">
 				<hr class="w3-opacity">
 				<w3-center>
@@ -242,12 +120,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				<hr class="w3-opacity">
 			</div>
 		</div>
-		
+
 
 		<!-- WORKS SECTION -------------------------------------------------------------------------------------->
 		<div class="w3-container w3-light-grey w3-text-white w3-center w3-padding-32" id="works">
 			<div class="w3-content" style="max-width:600px">
-			
+
 				<!-- 1st row verticaly centered text in the square columns -->
 				<div class="square">
 					<div class="content">
@@ -340,9 +218,108 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					</div>
 				</div>
 				<!-- end of third row -->
-				
+
 			</div>
-			
+
+		</div>
+
+		<!-- FOR FUN SECTION -------------------------------------------------------------------------------------->
+		<div class="w3-container w3-dark-grey w3-text-white w3-center w3-padding-32" id="for fun">
+			<div class="w3-content" style="max-width:600px">
+
+				<!-- 1st row verticaly centered text in the square columns -->
+				<div class="square">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								<ul>This demo shows you can center multiple types of content :
+									<li>Text</li>
+									<li>Images</li>
+									<li>Lists</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell numbers">
+								98%
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell numbers">
+								3.9/5
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 2nd row -->
+
+				<div class="square bg img1">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								Centered responsive images as background with centered content over it.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square bg img2">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								Again
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square bg img3">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								And again
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- start of third row-->
+
+				<div class="square bg img1">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								Centered responsive images as background with centered content over it.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square bg img2">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								Again
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="square bg img3">
+					<div class="content">
+						<div class="table">
+							<div class="table-cell">
+								And again
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end of third row -->
+			</div>
 		</div>
 
 		<!-- Contact section -->
@@ -379,9 +356,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			</div>
 		</div>
 
-
-
-
 		<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp"
 				title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
 
@@ -408,6 +382,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			}
 
 		</script>
-	</body>
+</body>
 
 </html>
