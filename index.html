@@ -55,10 +55,10 @@
 	}
 
 	.side-button {
-		margin: 0; 
-		position: absolute; 
-		top: 50%; 
-		left: 50%; 
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	}
@@ -68,7 +68,7 @@
 	<!-- Sidebar/menu -->
 	<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-center"
 		style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
-		<div class = side-button>
+		<div class=side-button>
 			<!--w3-padding-64 w3-center text-align:center;-->
 			<h3><b>SCHAWNERY<br>LIN</b></h3>
 			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ME</a>
@@ -99,20 +99,11 @@
 					I'm also passionate about all things Information Technology and I'm an aspiring Maker and Artist.
 				</p>
 
-				<!-- Modal for full size images on click-->
-				<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-					<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-					<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-						<img id="img01" class="w3-image">
-						<p id="caption"></p>
-					</div>
-				</div>
-
 				<w3-center>
 					<p>
 						<form method="get" action="assets/Schawnery_Resume.pdf">
-							<button
-								class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download
+							<button class="w3-button w3-light-grey w3-padding-large w3-margin-top 
+								w3-margin-bottom w3-hover-black" style="border-radius: 9px;">Download
 								Resume</button>
 						</form>
 					</p>
@@ -161,7 +152,7 @@
 
 				<!-- 2nd row -->
 
-				<div class="square bg img1">
+				<div class="square">
 					<div class="content">
 						<div class="table">
 							<div class="table-cell">
@@ -170,7 +161,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="square bg img2">
+				<div class="square">
 					<div class="content">
 						<div class="table">
 							<div class="table-cell">
@@ -179,7 +170,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="square bg img3">
+				<div class="square">
 					<div class="content">
 						<div class="table">
 							<div class="table-cell">
@@ -188,7 +179,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 
 			</div>
 
@@ -224,41 +215,31 @@
 				<div class="square">
 					<div class="content">
 						<div class="table">
-							<div class="table-cell numbers">
-								3.9/5
-							</div>
+							<video autoplay loop muted>
+								<source src="./assets/smoke_animation.mp4" type="video/mp4" style = "object-fit:contain">
+							</video>
 						</div>
 					</div>
 				</div>
+
+				<div class = "square vidInsert">
+					<video autoplay loop muted style = "object-fit:fill;" width=150 height=75>
+						<source src="./assets/smoke_animation.mp4" type="video/mp4">
+					</video>
+				</div>
+					
+
 
 				<!-- 2nd row -->
 
-				<div class="square bg img1">
-					<div class="content">
-						<div class="table">
-							<div class="table-cell w3-center" style="text-shadow: 2px 2px #000000">
-								<h1></h1><strong>fabled</strong>
-							</div>
-						</div>
-					</div>
-				</div>
+
+				<a href="http://google.com">
+					<div class="square bg img1"></div>
+				</a>
+
 				<div class="square bg img2">
-					<div class="content">
-						<div class="table">
-							<div class="table-cell">
-								Again
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="square bg img3">
-					<div class="content">
-						<div class="table">
-							<div class="table-cell">
-								And again
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -270,59 +251,40 @@
 				<h4 class="w3-center w3-text-white"><b>Contact Me</b></h4>
 				<p>Enough about me, I'd like to find out more about you! Feel free to fill out the form and fill me in
 					with the details :) I love meeting new people!</p>
-				<w3-center>
+				<div class="w3-center">
 					<p>email: schawl@uw.com</p>
 					<p>phone: (360) 726 2831</p>
-				</w3-center>
-
-				<form action="https://formspree.io/schawl@uw.edu" method="POST" />
-
-				<div class="w3-text-black">
-					<div class="w3-section">
-						<label class="w3-text-white">Name</label>
-						<input class="w3-input w3-border w3-text-black" type="text" name="Name" required>
-					</div>
-					<div class="w3-section">
-						<label class="w3-text-white">Email</label>
-						<input class="w3-input w3-border w3-text-black" type="text" name="Email" required>
-					</div>
-					<div class="w3-section">
-						<label class="w3-text-white">Message</label>
-						<input class="w3-input w3-border w3-text-black" type="text" name="Message" required>
-					</div>
-					<button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-					</form>
 				</div>
-				<hr color="black">
+
+				<form action="https://formspree.io/schawl@uw.edu" method="POST">
+
+					<div class="w3-text-black">
+						<div class="w3-section">
+							<label class="w3-text-white">Name</label>
+							<input class="w3-input w3-border w3-text-black" style="border-radius: 9x" type="text"
+								name="Name" required>
+						</div>
+						<div class="w3-section">
+							<label class="w3-text-white">Email</label>
+							<input class="w3-input w3-border w3-text-black" style="border-radius: 9x" type="text"
+								name="Email" required>
+						</div>
+						<div class="w3-section">
+							<label class="w3-text-white">Message</label>
+							<input class="w3-input w3-border w3-text-black" style="border-radius: 9x" type="text"
+								name="Message" required>
+						</div>
+						<button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+				</form>
 			</div>
+			<hr color="black">
 		</div>
+	</div>
 
-		<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp"
-				title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
+	<div class="w3-black w3-center w3-padding-18">CSS by <a href="https://www.w3schools.com/w3css/default.asp"
+			title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | Made by Schawnery</div>
 
-		<!-- End page content (write </div> if this doesn't work right...)-->
-
-		<script>
-			// Script to open and close sidebar
-			function w3_open() {
-				document.getElementById("mySidebar").style.display = "block";
-				document.getElementById("myOverlay").style.display = "block";
-			}
-
-			function w3_close() {
-				document.getElementById("mySidebar").style.display = "none";
-				document.getElementById("myOverlay").style.display = "none";
-			}
-
-			// Modal Image Gallery
-			function onClick(element) {
-				document.getElementById("img01").src = element.src;
-				document.getElementById("modal01").style.display = "block";
-				var captionText = document.getElementById("caption");
-				captionText.innerHTML = element.alt;
-			}
-
-		</script>
+	<!-- End page content (write </div> if this doesn't work right...)-->
 </body>
 
 </html>
