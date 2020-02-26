@@ -69,14 +69,14 @@ li{
 /*------------------ image section for FOR FUN ------------------*/
 /*---------------------------------------------------------------*/
 .img1{
-    background-image: url('./assets/Fabled.jpg');
+    background-image: url('./assets/fabled.jpg');
     max-width: 100%;
 }
 .img2{
     background-image: url('./assets/downtown.jpg');
 }
 .img3{
-    background-image: url('./assets/Seattle_Sun.jpg');
+    background-image: url('./assets/seattleSun.jpg');
 }
 
 
