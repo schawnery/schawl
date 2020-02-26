@@ -79,22 +79,6 @@ li{
     background-image: url('./assets/seattle_sun.jpg');
 }
 
-/*---------------------------------------------------------------*/
-/*------------------ video section for FOR FUN ------------------*/
-/*---------------------------------------------------------------*/
-.videoInsert {
-    position: relative; 
-    right: 0; 
-    bottom: 0;
-    max-width: 10%; 
-    width: auto; 
-    height: auto; 
-    size: auto;
-    overflow: auto;
-    align-content: center;
-    object-fit: cover;
-
-}
 
 /* formatting for image / square section */
 
